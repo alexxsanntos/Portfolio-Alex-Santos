@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Portfolio Alex Santos</title>
+
+    <script>
+      // Bloquear o zoom com a roda do mouse e os atalhos de teclado
+      document.addEventListener('wheel', function(event) {
+        if (event.ctrlKey || event.metaKey) {
+          event.preventDefault(); // Impede o zoom com a roda do mouse (Ctrl + Roda do mouse ou Command + Roda do mouse no Mac)
+        }
+      }, { passive: false });
+
+      // Bloquear o zoom com os atalhos de teclado (Ctrl +, Ctrl -, Ctrl 0)
+      document.addEventListener('keydown', function(event) {
+        // Detecta se o usuário pressionou "Ctrl" ou "Cmd" + "+" (aumento de zoom)
+        if ((event.ctrlKey || event.metaKey) && (event.key === '+' || event.key === '=')) {
+          event.preventDefault(); // Impede o zoom com Ctrl + ou Cmd + (nos navegadores)
+        }
+
+        // Detecta se o usuário pressionou "Ctrl" ou "Cmd" + "-" (diminuição de zoom)
+        if ((event.ctrlKey || event.metaKey) && event.key === '-') {
+          event.preventDefault(); // Impede o zoom com Ctrl - ou Cmd - (nos navegadores)
+        }
+
+        // Bloqueia o atalho Ctrl 0 (zero), que também pode fazer o zoom
+        if ((event.ctrlKey || event.metaKey) && event.key === '0') {
+          event.preventDefault(); // Impede o zoom com Ctrl 0 ou Cmd 0 (restaurar zoom)
+        }
+      }, { passive: false });
+
+      // Bloquear o gesto de pinçar para zoom em dispositivos móveis (touch)
+      document.addEventListener('touchstart', function(event) {
+        if (event.touches.length > 1) {
+          event.preventDefault(); // Impede o gesto de pinçar para zoom
+        }
+      }, { passive: false });
+
+      document.addEventListener('touchmove', function(event) {
+        if (event.touches.length > 1) {
+          event.preventDefault(); // Impede o gesto de pinçar para zoom
+        }
+      }, { passive: false });
+    </script>
+
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

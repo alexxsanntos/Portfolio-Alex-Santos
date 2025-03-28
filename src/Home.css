@@ -1,0 +1,475 @@
+.skilltree {
+
+  position: static;
+  width: 100%;
+  
+
+}
+
+.sobre {
+position: absolute;
+right: 190px;
+top: 300px;
+
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Nome */
+
+.linhaamarelaskill {
+  position: absolute;
+  max-width: 150px;
+  height: 15px;
+  left: 180px;
+  top: 250px;
+}
+
+
+.skillicon {
+  position: absolute;
+  top: 100px;
+  left: 580px;
+  max-width: 200px;
+  filter: invert(1);
+
+}
+.skills {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 20vh;
+  top: 1vw;
+  line-height: 1.2; /* Ajuste para melhor legibilidade */
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Definindo imagem como fundo de um elemento específico */
+.marca-dagua {
+  position: fixed; /* Garante que o elemento tenha posição relativa para ajustar outros elementos em relação a ele */
+  display: static;
+  z-index: -1; /* Faz com que a imagem fique abaixo do conteúdo do elemento */
+  top: 0px;
+  left: 0px;
+  opacity: 0.03; /* Ajusta a opacidade da imagem para deixá-la mais suave (marca d'água) */
+  overflow: hidden;
+}
+
+
+.no-select {
+  user-select: none;
+}
+
+.aumentar:hover {
+  transform: scale(1.5); /* Aumenta ligeiramente o tamanho do item */
+}
+
+/* Resetando margens e paddings para evitar espaços extras */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página ocupando toda a altura da tela */
+body {
+  margin-top: 25px;
+  padding: 0px;
+  background-color: #323445; /* Fundo escuro */
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  min-height: 100%; /* Garante que ocupe a tela toda */
+  min-width: 100%;
+  overflow-y: auto; /* Remove espaço extra */
+  overflow-x: hidden;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Se ajusta automaticamente */
+  flex-wrap: wrap;
+}
+
+/* Imagem do currículo */
+.curriculum {
+  position: absolute;
+  max-width: 300px;
+  right: 150px;
+  bottom: 200px;
+  box-shadow: #a5a7b7;
+  overflow: hidden;
+}
+
+/* Linha amarela */
+.linhaamarela {
+  position: absolute;
+  max-width: 200px;
+  left: 200px;
+  bottom: 230px;
+  resize: none;
+  overflow: hidden;
+}
+
+/* Linha amarela 2 */
+.linhaamarela2 {
+  position: absolute;
+  max-width: 200px;
+  width: 200px;
+  right: 150px;
+  top: 200px;
+  display: block;
+  resize: none;
+  overflow-x: auto; /* Controle horizontal */
+  overflow-y: hidden; /* Controle vertical */
+}
+
+.linhaamarela3 {
+  position: absolute;
+  width: 100px;
+  height: 15px;
+  right: 150px;
+  bottom: 170px;
+  resize: none;
+  overflow: auto;
+  flex-shrink: 0;
+}
+
+.linkedin {
+  position: absolute;
+  max-width: 75px;
+  right: 150px;
+  bottom: 75px;
+}
+
+.wpp {
+  position: absolute;
+  max-width: 100px;
+  right: 210px;
+  bottom: 60px;
+}
+
+.email {
+  position: absolute;
+  max-width: 65px;
+  right: 300px;
+  bottom: 75px;
+}
+
+/* Imagem de perfil */
+.memojialex {
+  position: absolute;
+  left: 500px; /* Mantendo a distância da esquerda */
+  bottom: 450px;
+  width: 200px;
+  height: auto;
+  max-width: 200px; /* Largura máxima da imagem */
+  border-radius: 10px; /* Bordas arredondadas */
+  resize: none;
+  overflow: hidden;
+  flex-shrink: 0;
+  
+}
+
+/* Nome */
+.nomealex {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  position: relative;
+  left: 150px;
+  top: 0px;
+  line-height: 1.2; /* Ajuste para melhor legibilidade */
+  resize: none;
+  overflow: hidden;
+  opacity: 100%;
+}
+
+/* Estilos de texto */
+h2 {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-size: 150px;
+  left: 150px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  resize: none;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+h5 {
+  pointer-events: auto;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  z-index: 9999;
+  top: 260px;
+  right: 150px;
+  font-size: 20px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  resize: none;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+h4 {
+  position: relative;
+  top: 0px;
+  left: 160px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Aplica animação em todos os elementos desejados */
+.animated {
+  opacity: 0; /* Começa invisível */
+  transform: translateY(20px); /* Leve deslocamento para baixo */
+  animation: fadeIn 1s ease-out forwards;
+
+}
+
+/* Definição da animação */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+main {
+  flex: 1; /* Ocupa o espaço disponível, empurrando o footer para baixo */
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 70%) { 
+  h5 {
+      display: none;
+  }
+
+
+  .curriculum {
+    display: none;
+}
+
+
+  .linhaamarela2 {
+  display: none;
+}
+
+
+  .linhaamarela3 {
+  display: none;
+}
+
+
+}
+
+@media (max-width: 768px) { 
+  .marca-dagua {
+    position: fixed; /* Garante que o elemento tenha posição relativa para ajustar outros elementos em relação a ele */
+    display: static;
+    z-index: -1; /* Faz com que a imagem fique abaixo do conteúdo do elemento */
+    top: 0px;
+    left: 0px;
+    opacity: 0.03; /* Ajusta a opacidade da imagem para deixá-la mais suave (marca d'água) */
+    overflow: hidden;
+  }
+  
+  main {
+    flex: 1; /* Ocupa o espaço disponível, empurrando o footer para baixo */
+  }
+  .no-select {
+    user-select: none;
+  }
+  
+  .aumentar:hover {
+    transform: scale(1.5); /* Aumenta ligeiramente o tamanho do item */
+  }
+  
+  /* Resetando margens e paddings para evitar espaços extras */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página ocupando toda a altura da tela */
+  body {
+    margin-top: 25px;
+    padding: 0px;
+    background-color: #323445; /* Fundo escuro */
+    background-size: 100% 100%;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh; /* Garante que ocupe a tela toda */
+    min-width: 100%;
+    overflow-y: auto; /* Remove espaço extra */
+    overflow-x: hidden;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Se ajusta automaticamente */
+    grid-template-rows: auto 1fr auto;
+    flex-wrap: wrap;
+    flex: 1;
+    display: grid;
+  }
+  
+  /* Imagem do currículo */
+  .curriculum {
+    position: absolute;
+    max-width: 300px;
+    right: 150px;
+    bottom: 200px;
+    box-shadow: #a5a7b7;
+    overflow: hidden;
+  }
+  
+  /* Linha amarela */
+  .linhaamarela {
+    position: absolute;
+    max-width: 200px;
+    left: 200px;
+    bottom: 230px;
+    resize: none;
+    overflow: hidden;
+  }
+  
+  /* Linha amarela 2 */
+  .linhaamarela2 {
+    position: absolute;
+    max-width: 200px;
+    width: 200px;
+    right: 150px;
+    top: 200px;
+    display: block;
+    resize: none;
+    overflow-x: auto; /* Controle horizontal */
+    overflow-y: hidden; /* Controle vertical */
+  }
+  
+  .linhaamarela3 {
+    position: absolute;
+    width: 100px;
+    height: 15px;
+    right: 150px;
+    bottom: 170px;
+    resize: none;
+    overflow: auto;
+    flex-shrink: 0;
+  }
+  
+  .linkedin {
+    position: absolute;
+    max-width: 75px;
+    right: 150px;
+    bottom: 75px;
+  }
+  
+  .wpp {
+    position: absolute;
+    max-width: 100px;
+    right: 210px;
+    bottom: 60px;
+  }
+  
+  .email {
+    position: absolute;
+    max-width: 65px;
+    right: 300px;
+    bottom: 75px;
+  }
+  
+  /* Imagem de perfil */
+  .memojialex {
+    position: absolute;
+    left: 270px; /* Mantendo a distância da esquerda */
+    bottom: 475px;
+    width: 150px;
+    height: auto;
+    max-width: 200px; /* Largura máxima da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    resize: none;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+  }
+  
+  /* Nome */
+  .nomealex {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    line-height: 1.2; /* Ajuste para melhor legibilidade */
+    resize: none;
+    overflow: hidden;
+    opacity: 100%;
+    font-size: 100px;
+  }
+  
+  /* Estilos de texto */
+  h2 {
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    font-size: 150px;
+    left: 150px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    resize: none;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  h5 {
+    pointer-events: auto;
+    text-align: right;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    z-index: 9999;
+    top: 260px;
+    right: 150px;
+    font-size: 20px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    resize: none;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  h4 {
+    position: relative;
+    top: 0px;
+    left: 160px;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+  }
+
+  .footer {
+    position: relative;
+    padding-top: 10px;
+    margin-top: 600px;
+  }
+}

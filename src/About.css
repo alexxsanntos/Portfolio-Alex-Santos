@@ -1,0 +1,115 @@
+
+
+  .skilltree {
+
+    position: relative;
+    width: 100%;
+    top: 150px;
+    min-width: 100%;
+    resize: none;
+  
+  }
+  
+  .sobre {
+  position: absolute;
+  right: 175px;
+  top: 315px;
+  white-space: nowrap; /* Impede que o texto quebre */
+  overflow: hidden;
+  justify-content: space-between;
+
+  }
+  
+
+  
+  .linhaamarelaskill {
+    position: absolute;
+    max-width: 150px;
+    height: 15px;
+    left: 180px;
+    top: 275px;
+  }
+  
+  
+  .skillicon {
+    position: absolute;
+    top: 80px;
+    left: 580px;
+    max-width: 200px;
+    filter: invert(1);
+  
+  }
+  .skills {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 20vh;
+    top: 1vw;
+    line-height: 1.2; /* Ajuste para melhor legibilidade */
+  }
+  
+  .footer {
+    position: relative;
+    padding-top: 10px;
+    margin-top: 160px;
+    
+    
+    }
+
+  /*-----------------------------------------------------------------------------------------------------------------------*/
+  
+  
+  @media (max-width: 768px) { 
+    /* Estilos para telas menores, como celulares e tablets */
+    .skilltree {
+
+        position: relative;
+        width: 100%;
+        top: 150px;
+        min-width: 100%;
+        resize: none;
+      
+      }
+      
+      .sobre {
+      position: absolute;
+      right: 30px;
+      top: 315px;
+      align-items: center;
+      font-size: 10px; /* Tamanho fixo */
+      white-space: nowrap; /* Impede que o texto quebre */
+      overflow: hidden;
+      justify-content: space-between;
+      text-align: justify;
+
+
+      }
+      
+    
+      
+      .linhaamarelaskill {
+        position: absolute;
+        max-width: 150px;
+        height: 15px;
+        left: 50px;
+        top: 235px;
+      }
+      
+      
+      .skillicon {
+        position: absolute;
+        top: 40px;
+        left: 450px;
+        max-width: 200px;
+        filter: invert(1);
+      
+      }
+      .skills {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        position: relative;
+        left: auto;
+        top: auto;
+        line-height: 1.2; /* Ajuste para melhor legibilidade */
+      }
+  }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Link para a fonte Roboto do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Home.css"> <!-- Seu arquivo CSS -->
+
+  <title>Portfolio Alex Santos</title>
+  <script>
+    // Bloquear o zoom com a roda do mouse e os atalhos de teclado
+    document.addEventListener('wheel', function(event) {
+      if (event.ctrlKey) {
+        event.preventDefault(); // Impede o zoom com a roda do mouse (Ctrl + Roda do mouse)
+      }
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if ((event.ctrlKey && (event.key === '+' || event.key === '-' || event.key === '0'))) {
+        event.preventDefault(); // Impede o zoom com os atalhos Ctrl + / Ctrl - / Ctrl 0
+      }
+    });
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
