@@ -1,0 +1,14 @@
+.contatos {
+
+    text-align: left;
+      font-family: "Open Sans", sans-serif;
+      position: relative;
+      font-size: 150px;
+      left: 150px;
+      text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+      color: #ffffff;
+      resize: none;
+      overflow: hidden;
+      flex-shrink: 0;
+      font-weight: bold;
+    }

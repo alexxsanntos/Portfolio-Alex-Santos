@@ -258,7 +258,7 @@ main {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 70%) { 
+@media (max-width: 70vw) { 
   h5 {
       display: none;
   }
@@ -282,6 +282,13 @@ main {
 }
 
 @media (max-width: 768px) { 
+
+  .tudo{
+    align-items: middle;
+    display: flex;
+    gap: 100px; /* Espaço entre os elementos filhos */
+
+  }
   .marca-dagua {
     position: fixed; /* Garante que o elemento tenha posição relativa para ajustar outros elementos em relação a ele */
     display: static;

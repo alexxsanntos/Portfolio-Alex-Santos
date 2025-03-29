@@ -9,7 +9,7 @@ document.addEventListener('contextmenu', function(e) {
 
 const Home = () => {
     return (
-      <div className="p-10">
+      <div className="tudo p-10">
 
         <h5 className="intro animated no-select fixed-text">Programador full-stack que gosta de  transformar<br /> ideias em 
             soluções digitais de verdade. Gosto de <br />resolver problemas complexos com código limpo e <br />eficiente, 
